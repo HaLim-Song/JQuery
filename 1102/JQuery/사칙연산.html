@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>자바 스크립트 계산기</title>
+<script>
+
+function add(){
+  var n1 = parselnt(document.getElementByld("num1").value);
+  var n2 = parselnt(document.getElementByld("num2").value);
+  var sum = n1 + n2;
+  document.getElementByld("result").value = sum;
+}
+
+function sub(){
+  var n1 = parselnt(document.getElementByld("num1").value);
+  var n2 = parselnt(document.getElementByld("num2").value);
+  var sum = n1 - n2;
+  document.getElementByld("result").value = sub;
+}
+
+function mul(){
+  var n1 = parselnt(document.getElementByld("num1").value);
+  var n2 = parselnt(document.getElementByld("num2").value);
+  var sum = n1 * n2;
+  document.getElementByld("result").value = mul;
+}
+
+function div(){
+  var n1 = parselnt(document.getElementByld("num1").value);
+  var n2 = parselnt(document.getElementByld("num2").value);
+  var sum = n1 + n2;
+  document.getElementByld("result").value = div;
+}
+
+</script>
+</head>
+<body>
+<h2>자바스크립트 계산기</h2>
+<table>
+<tr>
+  <td>num1</td>
+  <td><input type = "text" id=""= "num1" size = "10"></td>
+</tr>
+  <td>num2</td>
+  <td><input type = "text" id=""= "num2" size = "10"></td>
+<tr>
+  <th colspan = 2><input type = "button" value = "+" onclick = "add()">
+  <input type = "button" value = "-" onclick = "sub()">
+  <input type = "button" value = "*" onclick = "mul()">
+  <input type = "button" value = "/" onclick = "div()">
+</th>
+<tr>
+  <td>restult</td>
+  <td><input type = "text" id = "result" size = "10"></td>
+</tr>
+</table>
+</body>
+</html>
